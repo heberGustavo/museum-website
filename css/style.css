@@ -1,4 +1,43 @@
-/********************************
-    Estrutura Padrão do site
-********************************/
+/* Fonts
+     ========================================================================== */
+
+.russo-one-regular {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Header
+     ========================================================================== */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header nav {
+    padding: 27px 0 !important;
+}
+
+header nav .logo a {
+    font-family: "Russo One", sans-serif;
+    font-size: 27px;
+    line-height: 0.1;
+}
+
+header nav .logo a .subtitle{
+    font-size: 15px !important;
+}
+
+header nav .logo {
+    padding-left: 70px;
+}
+
+header nav .menus {
+    flex-grow: 0 !important;
+    padding-right: 70px;
+}
+
 
