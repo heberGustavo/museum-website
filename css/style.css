@@ -1,12 +1,29 @@
-/* Fonts
+/* Root
      ========================================================================== */
 
-.russo-one-regular {
-    font-family: "Russo One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+:root {
+    --color-white: #fff;
+    --color-red: #BC001A;
+    --font-russo-one: "Russo One", sans-serif;
+    --font-kanit: "Kanit", sans-serif;
+    --font-merriweather: "Merriweather", serif;
 }
 
+.ml-45 {
+    margin-left: 45px;
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1600px;
+    }
+}
 
 /* Header
      ========================================================================== */
@@ -15,19 +32,33 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 9999;
 }
 
 header nav {
     padding: 27px 0 !important;
 }
 
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    align-self: center;
+    padding: 0 10px;
+}
+
 header nav .logo a {
-    font-family: "Russo One", sans-serif;
+    font-family: var(--font-russo-one);
     font-size: 27px;
     line-height: 0.1;
 }
 
-header nav .logo a .subtitle{
+header nav .logo a {
+    color: var(--color-white) !important;
+}
+
+header nav .logo a .subtitle {
     font-size: 15px !important;
 }
 
@@ -40,4 +71,145 @@ header nav .menus {
     padding-right: 70px;
 }
 
+header .navbar-light .navbar-nav .nav-link {
+    color: var(--color-white) !important;
+    font-family: var(--font-kanit);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
+header .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--color-white) !important;
+}
+
+.btn-tickets {
+    background-color: var(--color-red) !important;
+    padding: 15px;
+}
+
+/* Banner Exposição Recente
+     ========================================================================== */
+
+.banner-exposicao-recente {
+    background-color: #000;
+    width: 100%;
+    height: 745px;
+}
+
+.banner-exposicao-recente .super-hyper {
+    width: 100%;
+    height: 745px;
+    background-image: url(../img/Super-Hyper-Cars-Exhibit-Petersen-Museum.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 0;
+}
+
+.banner-exposicao-recente .box-info {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.box-info .info {
+    color: var(--color-white);
+}
+
+.box-info .info h4 {
+    text-decoration: underline;
+}
+
+.box-info .info h1 {
+    font-family: var(--font-merriweather);
+}
+
+@media (min-width: 1200px) {
+    .banner-exposicao-recente .box-info .info h4 {
+        font-size: 1rem;
+    }
+
+    .banner-exposicao-recente .box-info .info h1 {
+        font-size: 5rem;
+    }
+
+    .banner-exposicao-recente .box-info .info h3 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Banner exposicao Cards
+     ========================================================================== */
+
+.banner-exposicao-cards {
+    background-color: #000;
+    width: 100%;
+    height: 400px;
+}
+
+.banner-exposicao-cards .banner-exposicao-destaque .box-info,
+.banner-exposicao-cards .banner-exposicao-popular .box-info {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Banner exposicao DESTAQUE
+     ========================================================================== */
+
+.banner-exposicao-cards .banner-exposicao-destaque .img-car {
+    width: 50%;
+    height: 400px;
+    background-image: url(../img/lowrider-exhibit-petersen_0003_MTK00702.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+
+.banner-exposicao-cards .banner-exposicao-destaque{
+    float: left;
+    width: 50%;
+}
+
+/* Banner exposicao POPULAR
+     ========================================================================== */
+
+.banner-exposicao-cards .banner-exposicao-popular{
+    float: right;
+    width: 50%;
+}
+
+.banner-exposicao-cards .banner-exposicao-popular .img-car {
+    width: 50%;
+    height: 360px;
+    background-image: url(../img/splendor-and-speed-PAM-P5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+
+.banner-exposicao-cards .banner-exposicao-popular .box-info {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
