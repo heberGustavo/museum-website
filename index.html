@@ -82,7 +82,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="banner-exposicao-cards">
             <div class="banner-exposicao-destaque">
                 <div class="img-car"></div>
@@ -110,7 +110,7 @@
             </div>
 
         </section>
-        
+
         <section class="proximos-eventos">
             <div class="container">
                 <div class="row cabecalho">
@@ -118,7 +118,7 @@
                         <span class="titulo">Próximos Eventos</span>
                     </div>
                     <div class="col-md-6 pr-0 text-end">
-                        <button>Todos os Eventos</button>
+                        <button class="button-white-default">Todos os Eventos</button>
                     </div>
                 </div>
                 <div class="row cards">
@@ -141,7 +141,38 @@
             </div>
         </section>
 
-        
+        <section>
+            <div class="container">
+                <div class="linha-divisao"></div>
+            </div>
+        </section>
+
+        <section class="informacoes-museu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 planejar-visita">
+                        <h4>Planeje sua visita</h4>
+                        <p>
+                            6060 Wilshire Blvd. <br>
+                            Los Angeles, CA 90036
+                        </p>
+                        <h6>Aberto diariamente das 10h às 17h</h6>
+                        <button class="button-white-default mt-4">Visitar Museu</button>
+                    </div>
+                    <div class="col-md-6 membro">
+                        <h4>V | Membro</h4>
+                        <p>
+                            Junte-se a milhares de outros entusiastas, tenha acesso <br>
+                            ilimitado ao museu, vantagens exclusivas e muito mais!
+                        </p>
+                        <button class="button-white-default mt-4">Junte-se hoje</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="player" style="width: 100%; height: 600px; background-color: aliceblue;"></section>
 
         <br>
         <br>
@@ -174,18 +205,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    <script>
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            console.log(scroll)
-            if (scroll >= 100) {
-                $("header").addClass("bg-black", 500);
-            }
-            else {
-                $("header").removeClass("bg-black", 500);
-            }
-        }); //missing );
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
 </body>
 
 </html>
