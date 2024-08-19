@@ -4,8 +4,7 @@
 :root {
     --color-white: #fff;
     --color-red: #BC001A;
-
-    --background-black: #000;
+    --color-black: #000;
 
     --font-russo-one: "Russo One", sans-serif;
     --font-kanit: "Kanit", sans-serif;
@@ -17,7 +16,7 @@
 }
 
 .bg-black{
-    background-color: var(--background-black);
+    background-color: var(--color-black);
 }
 
 @media (min-width: 1400px) {
@@ -135,19 +134,19 @@ header .navbar-light .navbar-nav .nav-link.active,
 }
 
 .box-info .info h1 {
-    font-family: var(--font-merriweather);
+    font-family: var(--font-russo-one);
 }
 
 @media (min-width: 1200px) {
-    .banner-exposicao-recente .box-info .info h4 {
+    .box-info .info h4 {
         font-size: 1rem;
     }
 
-    .banner-exposicao-recente .box-info .info h1 {
+    .box-info .info h1 {
         font-size: 5rem;
     }
 
-    .banner-exposicao-recente .box-info .info h3 {
+    .box-info .info h3 {
         font-size: 1.6rem;
     }
 }
@@ -172,6 +171,7 @@ header .navbar-light .navbar-nav .nav-link.active,
     z-index: 1;
 }
 
+
 /* Banner exposicao DESTAQUE
      ========================================================================== */
 
@@ -191,6 +191,10 @@ header .navbar-light .navbar-nav .nav-link.active,
 .banner-exposicao-cards .banner-exposicao-destaque{
     float: left;
     width: 50%;
+}
+
+.banner-exposicao-cards .banner-exposicao-destaque .info{
+    margin-left: 100px;
 }
 
 /* Banner exposicao POPULAR
@@ -219,4 +223,32 @@ header .navbar-light .navbar-nav .nav-link.active,
     height: 400px;
     display: flex;
     align-items: center;
+}
+
+
+/* Próximos Eventos
+     ========================================================================== */
+
+.proximos-eventos .cabecalho{
+    margin: 80px 0;
+}
+
+.proximos-eventos .cabecalho .titulo{
+    font-family: var(--font-kanit);
+    font-size: 1.75rem;
+}
+
+.proximos-eventos .cabecalho button{
+    background-color: var(--color-white) !important;
+    padding: 15px;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    font-weight: 700;
+    width: 230px;
+    height: 60px;
+}
+
+.proximos-eventos .cabecalho button:hover{
+    background-color: var(--color-red) !important;
+    color: var(--color-white);
 }
