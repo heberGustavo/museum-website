@@ -15,6 +15,14 @@
     margin-left: 45px;
 }
 
+.pl-0{
+    padding-left: 0;
+}
+
+.pr-0{
+    padding-right: 0;
+}
+
 .bg-black{
     background-color: var(--color-black);
 }
@@ -251,4 +259,17 @@ header .navbar-light .navbar-nav .nav-link.active,
 .proximos-eventos .cabecalho button:hover{
     background-color: var(--color-red) !important;
     color: var(--color-white);
+}
+
+.proximos-eventos .cards{
+    cursor: pointer;
+}
+
+.proximos-eventos .cards img{
+    width: 100%;
+}
+
+.proximos-eventos .cards h4{
+    font-size: 18px;
+    margin-top: 10px;
 }
