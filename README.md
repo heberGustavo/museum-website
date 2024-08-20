@@ -2,5 +2,6 @@
 
 URL: https://hebergustavo.github.io/museum-website/
 
-![image](https://github.com/user-attachments/assets/a156e188-d423-4692-b4f7-92b21944322d)
+![image](https://github.com/user-attachments/assets/0a1173f6-071c-4bec-a944-dee079e26560)
+
 
