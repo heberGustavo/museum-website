@@ -153,6 +153,21 @@ header .navbar-light .navbar-nav .nav-link.active,
     }
 }
 
+/* Mobile
+     ========================================================================== */
+  
+.container-menu-mobile nav a {
+    color: var(--color-white) !important;
+    font-family: var(--font-kanit);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container-menu-mobile nav .btn-tickets{
+    padding: 10px;
+}
+
 /* Banner Exposição Recente
      ========================================================================== */
 
