@@ -1,4 +1,4 @@
-## Demo - Museum :european_castle:
+## Demo - Vintage Automotive Museum :european_castle:
 
 URL: https://hebergustavo.github.io/vintage-automotive-museum-website/
 
