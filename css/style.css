@@ -138,6 +138,19 @@ header .navbar-light .navbar-nav .nav-link.active,
 .btn-tickets {
     background-color: var(--color-red) !important;
     padding: 15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1389px) {
+
+    header nav li{
+        padding: 0;
+    }
+
+    header .navbar-light .navbar-nav .nav-link {
+        letter-spacing: 0;
+    }
 }
 
 /* Banner Exposição Recente
@@ -182,13 +195,30 @@ header .navbar-light .navbar-nav .nav-link.active,
     font-family: var(--font-russo-one);
 }
 
+@media screen and (max-width: 990px) {
+    .banner-exposicao-cards .banner-exposicao-destaque .info,
+    .banner-exposicao-cards .banner-exposicao-popular .info{
+        margin-left: 60px !important;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+    .box-info .info h4 {
+        font-size: 15px;
+    }
+
+    .box-info .info h3 {
+        font-size: 19px;
+    }
+}
+
 @media (min-width: 1200px) {
     .box-info .info h4 {
         font-size: 1rem;
     }
 
     .box-info .info h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .box-info .info h3 {
@@ -263,10 +293,8 @@ header .navbar-light .navbar-nav .nav-link.active,
     right: 0;
 }
 
-.banner-exposicao-cards .banner-exposicao-popular .box-info {
-    height: 400px;
-    display: flex;
-    align-items: center;
+.banner-exposicao-cards .banner-exposicao-popular .info {
+    margin-left: 100px;
 }
 
 
@@ -421,7 +449,6 @@ header .navbar-light .navbar-nav .nav-link.active,
     padding: 100px;
 }
 
-
 .columns-red-gray .bg-gray{
     background-color: var(--color-bloco-dark-gray);
     color: var(--color-white);
@@ -435,6 +462,13 @@ header .navbar-light .navbar-nav .nav-link.active,
 .columns-red-gray span{
     text-decoration: underline;
     font-family: var(--font-kanit);
+}
+
+@media screen and (max-width: 1198px) {
+    .columns-red-gray .bg-gray,
+    .columns-red-gray .bg-red{
+        padding: 50px;
+    }
 }
 
 
@@ -456,6 +490,10 @@ footer .newsletter h3{
     text-transform: uppercase;
     font-size: 23px;
     margin-bottom: 20px;
+}
+
+footer .newsletter button{
+    margin-left: 2px;
 }
 
 footer .linha-divisao{
