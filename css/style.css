@@ -5,6 +5,8 @@
     --color-white: #fff;
     --color-red: #BC001A;
     --color-black: #000;
+    --color-dark-gray: #898989;
+    --color-bloco-dark-gray: hsl(0 2% 22% / 1);
 
     --font-russo-one: "Russo One", sans-serif;
     --font-kanit: "Kanit", sans-serif;
@@ -39,6 +41,11 @@
     }
 }
 
+.input-custom{
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+}
 
 .button-white-default {
     background-color: var(--color-white) !important;
@@ -53,6 +60,20 @@
 .button-white-default:hover {
     background-color: var(--color-red) !important;
     color: var(--color-white);
+}
+
+.button-red {
+    background-color: var(--color-red) !important;
+    padding: 15px;
+    color: var(--color-white);
+    border: 1px solid transparent;
+    font-weight: 700;
+    width: 230px;
+    height: 60px;
+}
+
+.button-red:hover {
+    opacity: 0.9;
 }
 
 /* Header
@@ -243,7 +264,6 @@ header .navbar-light .navbar-nav .nav-link.active,
 }
 
 .banner-exposicao-cards .banner-exposicao-popular .box-info {
-    width: 100%;
     height: 400px;
     display: flex;
     align-items: center;
@@ -300,4 +320,152 @@ header .navbar-light .navbar-nav .nav-link.active,
 
 .informacoes-museu h6 {
     font-weight: 700;
+}
+
+/* Player 
+     ========================================================================== */
+
+.player {
+    margin: 80px 0;
+    background-color: var(--color-black);
+}
+
+.player video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.3;
+    margin-bottom: -6px;
+}
+
+.player .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.player .info {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    color: white;
+    text-align: center;
+}
+
+.player .info h4 {
+    font-family: var(--font-kanit);
+}
+
+.player .info h1 {
+    font-family: var(--font-russo-one);
+    font-size: 110px;
+}
+
+.player .info p {
+    font-family: var(--font-kanit);
+}
+
+
+
+/* Últimos Destques
+     ========================================================================== */
+
+.ultimos-destaques .cabecalho {
+    margin: 80px 0;
+}
+
+.ultimos-destaques .cabecalho .titulo {
+    font-family: var(--font-kanit);
+    font-size: 1.75rem;
+}
+
+.ultimos-destaques .cards {
+    cursor: pointer;
+}
+
+.ultimos-destaques .cards img {
+    width: 100%;
+}
+
+.ultimos-destaques .cards h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.ultimos-destaques .cards span {
+    font-style: italic;
+    color: var(--color-dark-gray);
+    font-size: 14px;
+}
+
+
+
+/* Column Red and Gray
+     ========================================================================== */
+
+.columns-red-gray {
+    margin: 100px 0 0 0;
+}
+
+.columns-red-gray .row{
+    margin: 0;
+}
+
+.columns-red-gray .container{
+    margin: 50px;
+}
+
+.columns-red-gray .bg-red{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 100px;
+}
+
+
+.columns-red-gray .bg-gray{
+    background-color: var(--color-bloco-dark-gray);
+    color: var(--color-white);
+    padding: 100px;
+}
+
+.columns-red-gray h3{
+    font-family: var(--font-kanit);
+}
+
+.columns-red-gray span{
+    text-decoration: underline;
+    font-family: var(--font-kanit);
+}
+
+
+/* Footer
+     ========================================================================== */
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 100px 0 1px 0;
+}
+
+footer h3{
+    font-family: var(--font-kanit);
+}
+
+footer .newsletter h3{
+    font-family: var(--font-kanit);
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+footer .linha-divisao{
+    background-color: var(--color-white);
+    margin: 20px 0;
+}
+
+footer .developed{
+    font-size: 14px;
+    font-family: var(--font-kanit);
+    text-align: center;
+    padding: 0;
 }
