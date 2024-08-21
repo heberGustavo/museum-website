@@ -2,6 +2,5 @@
 
 URL: https://hebergustavo.github.io/vintage-automotive-museum-website/
 
-![image](https://github.com/user-attachments/assets/0a1173f6-071c-4bec-a944-dee079e26560)
 
-
+![screenshot-hebergustavo github io-2024 08 21-07_47_33](https://github.com/user-attachments/assets/d3b2674c-0564-4967-a690-ffb7408f67df)
