@@ -3,6 +3,11 @@ $(document).ready(function() {
     if(widthPage <= 1198){
         $(".newsletter .form").removeClass("col-md-6").addClass("row");
     }
+
+    $("ul li a").click(function(e){
+        e.preventDefault();
+        alert("Estou sem ação. Sou de demonstração");
+    });
 });
 
 
