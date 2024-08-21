@@ -13,6 +13,14 @@
     --font-merriweather: "Merriweather", serif;
 }
 
+.hv100{
+    height: 100vh !important;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
 .ml-45 {
     margin-left: 45px;
 }
@@ -45,6 +53,7 @@
     width: 300px;
     height: 60px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .button-white-default {
@@ -55,6 +64,7 @@
     font-weight: 700;
     width: 230px;
     height: 60px;
+    border-radius: 5px;
 }
 
 .button-white-default:hover {
@@ -70,6 +80,7 @@
     font-weight: 700;
     width: 230px;
     height: 60px;
+    border-radius: 5px;
 }
 
 .button-red:hover {
@@ -139,8 +150,16 @@ header .navbar-light .navbar-nav .nav-link.active,
     background-color: var(--color-red) !important;
     padding: 15px;
     text-align: center;
+    border-radius: 5px;
 }
 
+
+@media screen and (max-width: 700px) {
+
+    header .logo{
+        padding-left: 0 !important;
+    }
+}
 
 @media screen and (max-width: 1389px) {
 
@@ -210,13 +229,6 @@ header .navbar-light .navbar-nav .nav-link.active,
     font-family: var(--font-russo-one);
 }
 
-@media screen and (max-width: 990px) {
-    .banner-exposicao-cards .banner-exposicao-destaque .info,
-    .banner-exposicao-cards .banner-exposicao-popular .info{
-        margin-left: 60px !important;
-    }
-}
-
 @media screen and (max-width: 1198px) {
     .box-info .info h4 {
         font-size: 15px;
@@ -247,18 +259,21 @@ header .navbar-light .navbar-nav .nav-link.active,
 
 .banner-exposicao-cards {
     background-color: #000;
-    width: 100%;
-    height: 400px;
+}
+
+.banner-exposicao-cards .banner-exposicao-popular,
+.banner-exposicao-cards .banner-exposicao-destaque {
+    position: relative;
 }
 
 .banner-exposicao-cards .banner-exposicao-destaque .box-info,
 .banner-exposicao-cards .banner-exposicao-popular .box-info {
-    width: 50%;
     height: 400px;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 1;
+    padding-left: 4%;
 }
 
 
@@ -266,7 +281,7 @@ header .navbar-light .navbar-nav .nav-link.active,
      ========================================================================== */
 
 .banner-exposicao-cards .banner-exposicao-destaque .img-car {
-    width: 50%;
+    width: 100%;
     height: 400px;
     background-image: url(../img/lowrider-exhibit-petersen_0003_MTK00702.jpg);
     background-position: center;
@@ -274,42 +289,21 @@ header .navbar-light .navbar-nav .nav-link.active,
     background-size: cover;
     opacity: 0.7;
     position: absolute;
-    z-index: 0;
-    left: 0;
 }
 
-.banner-exposicao-cards .banner-exposicao-destaque {
-    float: left;
-    width: 50%;
-}
-
-.banner-exposicao-cards .banner-exposicao-destaque .info {
-    margin-left: 100px;
-}
 
 /* Banner exposicao POPULAR
      ========================================================================== */
 
-.banner-exposicao-cards .banner-exposicao-popular {
-    float: right;
-    width: 50%;
-}
-
 .banner-exposicao-cards .banner-exposicao-popular .img-car {
-    width: 50%;
-    height: 360px;
+    width: 100%;
+    height: 400px;
     background-image: url(../img/splendor-and-speed-PAM-P5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
     position: absolute;
-    z-index: 0;
-    right: 0;
-}
-
-.banner-exposicao-cards .banner-exposicao-popular .info {
-    margin-left: 100px;
 }
 
 
@@ -329,6 +323,10 @@ header .navbar-light .navbar-nav .nav-link.active,
     cursor: pointer;
 }
 
+.proximos-eventos .cards div{
+    margin: 20px 0;
+}
+
 .proximos-eventos .cards img {
     width: 100%;
 }
@@ -338,6 +336,24 @@ header .navbar-light .navbar-nav .nav-link.active,
     margin-top: 10px;
 }
 
+@media screen and (max-width: 580px) {
+    .proximos-eventos .cabecalho {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+
+    .proximos-eventos .div-button {
+        text-align: center !important;
+        padding: 0 !important;
+        margin-top: 10px;
+    }
+
+    .button-white-default {
+        height: 48px;
+        padding: 0;
+        width: 190px;
+    }
+}
 
 /* Divisor
      ========================================================================== */
@@ -356,6 +372,10 @@ header .navbar-light .navbar-nav .nav-link.active,
     margin-top: 140px;
 }
 
+.informacoes-museu .row div{
+    margin: 20px 0;
+}
+
 .informacoes-museu h4 {
     font-family: var(--font-merriweather);
     font-weight: 700;
@@ -363,6 +383,13 @@ header .navbar-light .navbar-nav .nav-link.active,
 
 .informacoes-museu h6 {
     font-weight: 700;
+}
+
+@media screen and (max-width: 580px) {
+    .informacoes-museu {
+        margin-top: 0px;
+        text-align: center;
+    }
 }
 
 /* Player 
@@ -441,7 +468,19 @@ header .navbar-light .navbar-nav .nav-link.active,
     font-size: 14px;
 }
 
+@media screen and (max-width: 580px) {
+    .ultimos-destaques .cabecalho {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
 
+    .ultimos-destaques .div-button {
+        text-align: center !important;
+        padding: 0 !important;
+        margin-top: 10px;
+    }
+
+}
 
 /* Column Red and Gray
      ========================================================================== */
@@ -452,10 +491,6 @@ header .navbar-light .navbar-nav .nav-link.active,
 
 .columns-red-gray .row{
     margin: 0;
-}
-
-.columns-red-gray .container{
-    margin: 50px;
 }
 
 .columns-red-gray .bg-red{
@@ -509,6 +544,7 @@ footer .newsletter h3{
 
 footer .newsletter button{
     margin-left: 2px;
+    border-radius: 5px;
 }
 
 footer .linha-divisao{
@@ -521,4 +557,22 @@ footer .developed{
     font-family: var(--font-kanit);
     text-align: center;
     padding: 0;
+}
+
+@media screen and (max-width: 770px) {
+    footer .newsletter .form{
+        justify-content: center;
+        margin: 0px;
+    }
+
+    footer .newsletter .input-custom{
+        width: 100%;
+    }
+
+    footer .newsletter button{
+        margin-top: 10px;
+        height: 48px;
+        padding: 0;
+        width: 190px;
+    }
 }

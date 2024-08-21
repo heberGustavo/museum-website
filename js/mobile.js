@@ -1,5 +1,6 @@
 let burger = document.getElementById('burger'),
-	nav = document.getElementById('main-nav');
+	nav = document.getElementById('main-nav'),
+	containerMobile = document.getElementById('container-mobile');
 
 $(document).ready(function () {
 	var widthPage = window.innerWidth;
@@ -11,6 +12,7 @@ $(document).ready(function () {
 burger.addEventListener('click', function (e) {
 	this.classList.toggle('is-open');
 	nav.classList.toggle('is-open');
+	containerMobile.classList.toggle('hv100');
 });
 
 /* Onload demo - dirty timeout */
